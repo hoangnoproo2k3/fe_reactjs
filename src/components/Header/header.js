@@ -10,11 +10,10 @@ const Header = () => {
         <Navbar bg="light" expand="lg">
             <Container>
                 {/* <Navbar.Brand href="#home">Learn-React-Bootstrap</Navbar.Brand> */}
-                {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+                <NavLink className='navbar navbar-brand' to={`/`}> Learn-React-Bootstrap</NavLink>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <NavLink className='navbar-brand' to={`/`}> Learn-React-Bootstrap</NavLink>
-
                         <NavLink className='nav-link' to={`/`}> Home</NavLink>
                         <NavLink className='nav-link' to={`/users`}> User</NavLink>
                         <NavLink className='nav-link' to={`/admin`}> Admin</NavLink>
